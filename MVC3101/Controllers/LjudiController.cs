@@ -1,11 +1,7 @@
 ﻿using MVC3101.DAL;
 using MVC3101.Models;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace MVC3101.Controllers
@@ -80,31 +76,8 @@ namespace MVC3101.Controllers
             return RedirectToAction("PregledOsoba");
         }
        
-        //[HttpPost]
-        //public ActionResult Izbrisi (int? id)
-        //{
-        //    var osoba = _db._dbO.Where(o => o.ID == id).FirstOrDefault();
-            
-        //    //Osoba osoba = _db._dbO.Find(ID);
-        //    _db._dbO.Remove(osoba);
-        //    _db.SaveChanges();
-        //    ViewBag.izbrisano = "Osoba je uspjesno izbrisana";
-        //    return RedirectToAction("PregledOsoba");
-        //}
-
-        //public ActionResult Details(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    Movie movie = db.Movies.Find(id);
-        //    if (movie == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(movie);
-        //}
+        
+        
 
 
 

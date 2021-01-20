@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Početna";
+}
+
+<h2 style="text-align:center">Početna</h2>
+
+
+<div  style="font-family:'Comic Sans MS';font-size:xx-large; text-align:center">
+    <p>D O B R O D O Š L I ! ! !</p>
+</div>
+
+
+
+<div style="border;border-width:medium" >
+    <h3>Uvod</h3>
+    <p> Kroz aplikaciju se mogu odraditi jednostavne radnje dodavanja, modificiranja i brisanja iz baze podataka.</p>
+</div>
+
+<table width="200" border="0">
+    <tr><td>@Html.ActionLink("Početna", "Index", "Home")</td></tr>
+    <tr><td>@Html.ActionLink("Pregled Osoba", "PregledOsoba", "Ljudi")</td></tr>
+    <tr><td>@Html.ActionLink("Dodaj Osobu", "DodajOsobu", "Ljudi")</td></tr>
+    <tr><td>@Html.ActionLink("Promijeni", "Promijeni", "Ljudi")</td></tr>
+</table>
+

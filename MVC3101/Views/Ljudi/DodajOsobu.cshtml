@@ -1,0 +1,27 @@
+﻿@model MVC3101.Models.Osoba
+@{
+    ViewBag.Title = "DodajOsobu";
+}
+
+<h2>DodajOsobu</h2>
+
+@*@using (Html.BeginForm("DodajOsobu", "Ljudi"))
+{ @Html.TextBoxFor(o => o.Ime)
+@Html.TextBoxFor(o=>o.Prezime)
+    @Html.TextBoxFor(o=>o.Adresa)
+    @Html.TextBoxFor(o=>o.Godine)
+    <input type="submit" value="Posalji" />
+
+}*@
+
+@using (Html.BeginForm())
+{ 
+@Html.EditorForModel()
+<input type="submit" value="Posalji"/>
+
+}
+
+
+
+@ViewBag.uredu
+@ViewBag.greska

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<MVC3101.Models.Osoba>
+   @{ 
+ ViewBag.Title = "PregledOsoba";
+}
+
+<h2>PregledOsoba</h2>
+@Html.ActionLink("Dodaj Osobu","DodajOsobu","Ljudi")
+
+<table class="table" border="1" style="text-align:center;")
+    <tr >
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.Ime)
+        </th>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.Prezime)
+        </th>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.Adresa)
+        </th>
+        <th style="text-align:center">
+            @Html.DisplayNameFor(model => model.Godine)
+        </th>
+    </tr> 
+    
+    @foreach ( var item in Model )
+    {
+    <tr>
+       
+        <td>@Html.DisplayFor(modelItem  => item.Ime)</td>
+        <td>@Html.DisplayFor(modelItem => item.Prezime)</td>
+        <td>@Html.DisplayFor(modelItem => item.Adresa)</td>
+        <td>@Html.DisplayFor(modelItem => item.Godine)</td>
+        <td>@Html.ActionLink("Promijeni", "Promijeni",new { id = item.ID })</td>
+        <td>@Html.ActionLink("Izbriši","Izbrisi", new { id = item.ID })</td>
+    </tr>
+    }
+
+
+</table>
+<label>@ViewBag.izbrisano</label>
+
+
